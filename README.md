@@ -32,3 +32,10 @@ search_all_notes("heterogeneous autoregressive")
 
 Read-only access to the shared `research_core` store at `RESEARCH_DATA_DIR`.
 Does not write to the database — purely a query layer over the shared SQLite + ChromaDB index.
+
+## Note
+
+This repo depends on `research-core`, an internal package in my personal
+research workspace (not published). The server won't install as-is; it's
+shared here as a reference implementation of the MCP pattern — tool shape,
+FastMCP wiring, and the layering of SQLite FTS5 + ChromaDB for hybrid search.
